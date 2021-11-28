@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto", sans-serif;
+    background-color: #f9f9f9;
+    color: rgb(125, 56, 219);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    font-size: 36px;
+    vertical-align: center;
+    text-align: center;
+}
+
+label{
+    font-weight: 700;
+}
+
+body > table{
+    width: 80%;
+}
+
+
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+.teste{
+    display: flex;
+    width:100%;
+    align-items: center;
+}
+
+div{
+    padding: 8px;
+}
+
+.titulo{
+    margin: 0;
+    padding: 16px;
+    width: 100%;
+    background-color: #c3eebe;
+}
+
+td, th {
+    border: 1px solid rgb(125, 56, 219);
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even), table.list thead>tr {
+    background-color: #c3eebe;
+}
+
+table.exibeCursoPorId thead>tr {
+    background-color: #c3eebe;
+}
+
+
+input[type=text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    background-color: rgb(249, 249, 249);
+    color: rgb(125, 56, 219);
+    border: 1px solid #68de5a;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+input[type=text]:focus {
+    outline: none !important;
+    background-color: #c3eebe;
+    border-color: 1px solid rgb(125, 56, 219);
+    box-shadow: 0 0 10px rgb(125, 56, 219);
+}
+
+input[type=submit], input[type=button]{
+    width: 30%;
+    color: rgb(125, 56, 219);
+    background-color: #68de5a;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+form div.botao{
+    text-align: center;
+}
+
+a{
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: 700;
+    margin-right: 4px;
+}
+
+label.valida-erro{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}

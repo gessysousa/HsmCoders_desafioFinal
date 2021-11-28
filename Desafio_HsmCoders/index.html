@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Plataforma de educação financeira - Gerenciador de cursos</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <div class="titulo"><h3>Plataforma de educação financeira - Gerenciador de cursos</h3></div>
+    <form
+            onsubmit="event.preventDefault();onFormSubmit();"
+            autocomplete="off"
+          >
+            <div>
+              <label>Título*</label>
+              <label class="valida-erro hide" id="tituloValidaErro">
+                Campo obrigatório
+              </label>
+              <input type="text" name="titulo" id="titulo" />
+            </div>
+            <div>
+              <label>Descrição</label>
+              <input type="text" name="descricao" id="descricao" />
+            </div>
+            <div>
+              <label>Endereço da Imagem</label>
+              <input type="text" name="imagem" id="imagem" />
+            </div>
+            <div>
+              <label>Nome do professor</label>
+              <input type="text" name="professor" id="professor" />
+            </div>
+            <div>
+              <label>Link das aulas</label>
+              <input type="text" name="link" id="link" />
+            </div>
+            <div class="botao">
+              <div>
+                  <input type="submit" value="Enviar" />
+                  <input type="button" value="Listar Cursos" onclick="listaCursos()" />
+                  <input type="button" value="Limpa Dados" onclick="limpaDados()" />
+              </div>
+              <div>
+                  <label>Id</label>
+                  <input type="text" name="idCurso" id="idCurso" style="width: 33%"/>   
+                  <input type="button" value="Mostrar curso por id" onclick="exibirCurso()" />
+                </div>
+            </div>
+            <body>
+          </form>
+
+          <div class="teste">
+            <div style="width: 20%"></div>
+            <table class="exibeCursoPorId" id="exibeCursoPorId" style="display:none">
+              <thead>
+                <tr>
+                  <th>Identificador</th>
+                  <th>Título</th>
+                  <th>Descrição</th>
+                  <th>Endereço da imagem</th>
+                  <th>Nome do professor</th>
+                  <th>Link das aulas</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+            
+            </div>
+
+          <div id="mostraTabela" style="display:none" >
+            <table class="list" id="listaCurso">
+              <thead>
+                <tr>
+                  <th>Identificador</th>
+                  <th>Título</th>
+                  <th>Descrição</th>
+                  <th>Endereço da imagem</th>
+                  <th>Nome do professor</th>
+                  <th>Link das aulas</th>
+                  <th>Ações</th>
+                </tr>
+              </thead>
+              <tbody></tbody>
+            </table>
+          </div>
+    
+    
+    <script src="script.js"></script>
+  </body>
+</html>
